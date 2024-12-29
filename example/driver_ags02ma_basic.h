@@ -70,7 +70,7 @@ uint8_t ags02ma_basic_deinit(void);
 
 /**
  * @brief      basic example read
- * @param[out] *ppb points to a converted data buffer
+ * @param[out] *ppb pointer to a converted data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed

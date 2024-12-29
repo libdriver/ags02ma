@@ -101,64 +101,64 @@ typedef struct ags02ma_info_s
 
 /**
  * @brief     initialize ags02ma_handle_t structure
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] STRUCTURE is ags02ma_handle_t
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] STRUCTURE ags02ma_handle_t
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_INIT(HANDLE, STRUCTURE)               memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link iic_init function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to an iic_init function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to an iic_init function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_IIC_INIT(HANDLE, FUC)                (HANDLE)->iic_init = FUC
 
 /**
  * @brief     link iic_deinit function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to an iic_deinit function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to an iic_deinit function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_IIC_DEINIT(HANDLE, FUC)              (HANDLE)->iic_deinit = FUC
 
 /**
  * @brief     link iic_read_cmd function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to an iic_read_cmd function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to an iic_read_cmd function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_IIC_READ_COMMAND(HANDLE, FUC)        (HANDLE)->iic_read_cmd = FUC
 
 /**
  * @brief     link iic_write_cmd function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to an iic_write_cmd function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to an iic_write_cmd function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_IIC_WRITE_COMMAND(HANDLE, FUC)       (HANDLE)->iic_write_cmd = FUC
 
 /**
  * @brief     link iic_write function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to an iic_write function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to an iic_write function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_IIC_WRITE(HANDLE, FUC)               (HANDLE)->iic_write = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_DELAY_MS(HANDLE, FUC)                (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an ags02ma handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to an ags02ma handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_AGS02MA_LINK_DEBUG_PRINT(HANDLE, FUC)             (HANDLE)->debug_print = FUC
@@ -176,7 +176,7 @@ typedef struct ags02ma_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an ags02ma info structure
+ * @param[out] *info pointer to an ags02ma info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -186,7 +186,7 @@ uint8_t ags02ma_info(ags02ma_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an ags02ma handle structure
+ * @param[in] *handle pointer to an ags02ma handle structure
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -198,7 +198,7 @@ uint8_t ags02ma_init(ags02ma_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an ags02ma handle structure
+ * @param[in] *handle pointer to an ags02ma handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -210,9 +210,9 @@ uint8_t ags02ma_deinit(ags02ma_handle_t *handle);
 
 /**
  * @brief      read tvoc
- * @param[in]  *handle points to an ags02ma handle structure
- * @param[out] *raw points to a raw data buffer
- * @param[out] *ppb points to a converted data buffer
+ * @param[in]  *handle pointer to an ags02ma handle structure
+ * @param[out] *raw pointer to a raw data buffer
+ * @param[out] *ppb pointer to a converted data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read tvoc failed
@@ -226,7 +226,7 @@ uint8_t ags02ma_read_tvoc(ags02ma_handle_t *handle, uint32_t *raw, uint32_t *ppb
 
 /**
  * @brief     zero point calibration
- * @param[in] *handle points to an ags02ma handle structure
+ * @param[in] *handle pointer to an ags02ma handle structure
  * @return    status code
  *            - 0 success
  *            - 1 zero point calibration failed
@@ -238,9 +238,9 @@ uint8_t ags02ma_zero_point_calibration(ags02ma_handle_t *handle);
 
 /**
  * @brief      get resistance
- * @param[in]  *handle points to an ags02ma handle structure
- * @param[out] *raw points to a raw data buffer
- * @param[out] *ohm points to a converted data buffer
+ * @param[in]  *handle pointer to an ags02ma handle structure
+ * @param[out] *raw pointer to a raw data buffer
+ * @param[out] *ohm pointer to a converted data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get resistance failed
@@ -253,8 +253,8 @@ uint8_t ags02ma_get_resistance(ags02ma_handle_t *handle, uint32_t *raw, double *
 
 /**
  * @brief      get version
- * @param[in]  *handle points to an ags02ma handle structure
- * @param[out] *version points to a version buffer
+ * @param[in]  *handle pointer to an ags02ma handle structure
+ * @param[out] *version pointer to a version buffer
  * @return     status code
  *             - 0 success
  *             - 1 get resistance failed
@@ -267,8 +267,8 @@ uint8_t ags02ma_get_version(ags02ma_handle_t *handle, uint8_t *version);
 
 /**
  * @brief     modify slave address
- * @param[in] *handle points to an ags02ma handle structure
- * @param[in] addr_7bit is the new slave address
+ * @param[in] *handle pointer to an ags02ma handle structure
+ * @param[in] addr_7bit new slave address
  * @return    status code
  *            - 0 success
  *            - 1 modify slave address failed
@@ -280,8 +280,8 @@ uint8_t ags02ma_modify_slave_address(ags02ma_handle_t *handle, uint8_t addr_7bit
 
 /**
  * @brief     set slave address
- * @param[in] *handle points to an ags02ma handle structure
- * @param[in] addr is the slave address
+ * @param[in] *handle pointer to an ags02ma handle structure
+ * @param[in] addr slave address
  * @return    status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -292,8 +292,8 @@ uint8_t ags02ma_set_slave_address(ags02ma_handle_t *handle, uint8_t addr);
 
 /**
  * @brief      get slave address
- * @param[in]  *handle points to an ags02ma handle structure
- * @param[out] *addr points to a slave address buffer
+ * @param[in]  *handle pointer to an ags02ma handle structure
+ * @param[out] *addr pointer to a slave address buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -315,10 +315,10 @@ uint8_t ags02ma_get_slave_address(ags02ma_handle_t *handle, uint8_t *addr);
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to an ags02ma handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to an ags02ma handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -330,10 +330,10 @@ uint8_t ags02ma_set_reg(ags02ma_handle_t *handle, uint8_t reg, uint8_t *buf, uin
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to an ags02ma handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to an ags02ma handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
