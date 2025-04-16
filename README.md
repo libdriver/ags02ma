@@ -10,7 +10,7 @@
 
 AGS02MA is a high-performance TVOC sensor which is equipped with a dedicated ASIC chip, adopting special digital module acquisition technology and gas sensing technology, to ensure good performance of high reliability, long-term stability, low power consumption, high sensitivity. Output signal of AGS02MA is standard I²C. Each sensor is fully calibrated and tested before delivery to meet the large-scale applications of customers.
 
-LibDriver AGS02MA is the full function driver of AGS02MA launched by LibDriver.It provides the function of reading TVOC, etc. LibDriver is MISRA compliant.
+LibDriver AGS02MA is a full-featured driver of AGS02MA launched by LibDriver.It provides the function of reading TVOC, etc. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

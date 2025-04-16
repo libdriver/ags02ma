@@ -1,10 +1,10 @@
 /**
  * @mainpage  LibDriver AGS02MA
- * @brief     LibDriver AGS02MA is a full function driver of AGS02MA and it can run in both MCU and Linux platform.
+ * @brief     LibDriver AGS02MA is a full-featured driver of AGS02MA and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
- * <h3>history</h3>
+ * <h3>History</h3>
  * <table>
  * <tr><th>Date        <th>Version  <th>Author      <th>Description
  * <tr><td>2024/10/31  <td>1.0      <td>Shifeng Li  <td>first upload
