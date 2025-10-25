@@ -1,11 +1,24 @@
 var searchData=
 [
-  ['iic_5faddr_62',['iic_addr',['../structags02ma__handle__s.html#ae4fb63dc1b166464d5da3aa753b0805a',1,'ags02ma_handle_s']]],
-  ['iic_5fdeinit_63',['iic_deinit',['../structags02ma__handle__s.html#af6963bbad902ca6e43942b48c07986c3',1,'ags02ma_handle_s']]],
-  ['iic_5finit_64',['iic_init',['../structags02ma__handle__s.html#a8826dd07625f8d90859ce9bd09628d61',1,'ags02ma_handle_s']]],
-  ['iic_5fread_5fcmd_65',['iic_read_cmd',['../structags02ma__handle__s.html#acebeabb312305acedcb64f4f10755117',1,'ags02ma_handle_s']]],
-  ['iic_5fwrite_66',['iic_write',['../structags02ma__handle__s.html#adca3ee7a793bbf510d5267daf0fcf1c5',1,'ags02ma_handle_s']]],
-  ['iic_5fwrite_5fcmd_67',['iic_write_cmd',['../structags02ma__handle__s.html#af9cb104d353f0c18dbb0fd01405f4889',1,'ags02ma_handle_s']]],
-  ['inited_68',['inited',['../structags02ma__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'ags02ma_handle_s']]],
-  ['interface_69',['interface',['../structags02ma__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'ags02ma_info_s']]]
+  ['debug_5fprint_0',['debug_print',['../structags02ma__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b',1,'ags02ma_handle_s']]],
+  ['delay_5fms_1',['delay_ms',['../structags02ma__handle__s.html#a406c9433252b7366de417b7a60915c81',1,'ags02ma_handle_s']]],
+  ['driver_20function_2',['driver function',['../group__ags02ma__base__driver.html',1,'ags02ma base driver function'],['../group__ags02ma__driver.html',1,'ags02ma driver function'],['../group__ags02ma__example__driver.html',1,'ags02ma example driver function'],['../group__ags02ma__extend__driver.html',1,'ags02ma extend driver function'],['../group__ags02ma__interface__driver.html',1,'ags02ma interface driver function'],['../group__ags02ma__link__driver.html',1,'ags02ma link driver function'],['../group__ags02ma__test__driver.html',1,'ags02ma test driver function']]],
+  ['driver_5fags02ma_2ec_3',['driver_ags02ma.c',['../driver__ags02ma_8c.html',1,'']]],
+  ['driver_5fags02ma_2eh_4',['driver_ags02ma.h',['../driver__ags02ma_8h.html',1,'']]],
+  ['driver_5fags02ma_5fbasic_2ec_5',['driver_ags02ma_basic.c',['../driver__ags02ma__basic_8c.html',1,'']]],
+  ['driver_5fags02ma_5fbasic_2eh_6',['driver_ags02ma_basic.h',['../driver__ags02ma__basic_8h.html',1,'']]],
+  ['driver_5fags02ma_5finterface_2eh_7',['driver_ags02ma_interface.h',['../driver__ags02ma__interface_8h.html',1,'']]],
+  ['driver_5fags02ma_5finterface_5ftemplate_2ec_8',['driver_ags02ma_interface_template.c',['../driver__ags02ma__interface__template_8c.html',1,'']]],
+  ['driver_5fags02ma_5flink_5fdebug_5fprint_9',['DRIVER_AGS02MA_LINK_DEBUG_PRINT',['../group__ags02ma__link__driver.html#gad7e6c53af000edd8c937c3bb9b3ae4cc',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fdelay_5fms_10',['DRIVER_AGS02MA_LINK_DELAY_MS',['../group__ags02ma__link__driver.html#ga69ce45050ae24ed3e72836fe0c706a46',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fiic_5fdeinit_11',['DRIVER_AGS02MA_LINK_IIC_DEINIT',['../group__ags02ma__link__driver.html#gadfcf733025e831dce45c792cdd4108b7',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fiic_5finit_12',['DRIVER_AGS02MA_LINK_IIC_INIT',['../group__ags02ma__link__driver.html#ga678add904e6acf9180ca99e7ef313b75',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fiic_5fread_5fcommand_13',['DRIVER_AGS02MA_LINK_IIC_READ_COMMAND',['../group__ags02ma__link__driver.html#gafa7f2bf48fd1077ab8260b8f17dea3a7',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fiic_5fwrite_14',['DRIVER_AGS02MA_LINK_IIC_WRITE',['../group__ags02ma__link__driver.html#ga5989c521488b7da8e845f0430f7c3eef',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5fiic_5fwrite_5fcommand_15',['DRIVER_AGS02MA_LINK_IIC_WRITE_COMMAND',['../group__ags02ma__link__driver.html#ga72c24911da80d4898044ffa25716da5e',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5flink_5finit_16',['DRIVER_AGS02MA_LINK_INIT',['../group__ags02ma__link__driver.html#gac14bd92d6e9efc696f023b20ef65e7a1',1,'driver_ags02ma.h']]],
+  ['driver_5fags02ma_5fread_5ftest_2ec_17',['driver_ags02ma_read_test.c',['../driver__ags02ma__read__test_8c.html',1,'']]],
+  ['driver_5fags02ma_5fread_5ftest_2eh_18',['driver_ags02ma_read_test.h',['../driver__ags02ma__read__test_8h.html',1,'']]],
+  ['driver_5fversion_19',['DRIVER_VERSION',['../driver__ags02ma_8c.html#ae578001fe043b4cca7a0edd801cfe9c4',1,'driver_ags02ma.c']]],
+  ['driver_5fversion_20',['driver_version',['../structags02ma__info__s.html#a41b0bd442708b70d252c50b92c75265a',1,'ags02ma_info_s']]]
 ];
