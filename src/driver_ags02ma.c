@@ -445,7 +445,7 @@ uint8_t ags02ma_get_resistance(ags02ma_handle_t *handle, uint32_t *raw, double *
  * @param[out] *version pointer to a version buffer
  * @return     status code
  *             - 0 success
- *             - 1 get resistance failed
+ *             - 1 get version failed
  *             - 2 handle is NULL
  *             - 3 handle is not initialized
  *             - 4 crc is error
